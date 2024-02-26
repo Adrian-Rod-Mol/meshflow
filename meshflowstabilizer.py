@@ -1028,6 +1028,8 @@ class MeshFlowStabilizer:
                 # Look at each face of the mesh. Since we know the original and transformed coordinates
                 # of its four vertices, we can construct a homography to fill in the remaining pixels
                 # TODO parallelize
+                print(self.mesh_row_count)
+                print(self.mesh_col_count)
                 for cell_top_left_row in range(self.mesh_row_count):
                     for cell_top_left_col in range(self.mesh_col_count):
 
